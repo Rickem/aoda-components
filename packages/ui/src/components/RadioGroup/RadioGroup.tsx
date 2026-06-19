@@ -30,9 +30,9 @@ export function RadioGroup({
     <RadioGroupContext.Provider value={name}>
       <fieldset role="radiogroup" className={cn("flex flex-col gap-2", className)}>
         <legend className="text-sm font-medium text-gray-900">{legend}</legend>
-        <div className="flex flex-col gap-1.5">{children}</div>
+        <div role="presentation" className="flex flex-col gap-1.5">{children}</div>
         {error && (
-          <p className="text-sm text-red-600" role="alert">
+          <p className="text-sm text-destructive-600" role="alert">
             {error}
           </p>
         )}
