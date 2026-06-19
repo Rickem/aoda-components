@@ -4,3 +4,4 @@ export { Input, type InputProps } from "./components/Input";
 export { Checkbox, type CheckboxProps, CheckboxGroup, type CheckboxGroupProps } from "./components/Checkbox";
 export { RadioGroup, RadioOption, type RadioGroupProps, type RadioOptionProps } from "./components/RadioGroup";
 export { Select, type SelectProps, type SelectOption } from "./components/Select";
+export { Modal, type ModalProps, ModalTrigger, ModalClose } from "./components/Modal";
