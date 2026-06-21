@@ -36,23 +36,23 @@ export default function FormValidationPage() {
         <h2 id="form-heading" className="text-lg font-semibold">Example Form</h2>
         <form onSubmit={handleSubmit} noValidate className="mt-4 space-y-4">
           <FormErrorSummary errors={errors} />
-          <FormField label="Name" htmlFor="name" error={submitted && errors.find(e => e.fieldId === "name")?.message} required>
+          <FormField label="Name" htmlFor="name" error={submitted ? errors.find(e => e.fieldId === "name")?.message : undefined} required>
             <input
               id="name"
               name="name"
               type="text"
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-              aria-invalid={submitted && errors.some(e => e.fieldId === "name") || undefined}
+              aria-invalid={submitted && errors.some(e => e.fieldId === "name") ? true : undefined}
               aria-describedby={submitted && errors.some(e => e.fieldId === "name") ? "name-error" : undefined}
             />
           </FormField>
-          <FormField label="Email" htmlFor="email" error={submitted && errors.find(e => e.fieldId === "email")?.message} required>
+          <FormField label="Email" htmlFor="email" error={submitted ? errors.find(e => e.fieldId === "email")?.message : undefined} required>
             <input
               id="email"
               name="email"
               type="email"
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-              aria-invalid={submitted && errors.some(e => e.fieldId === "email") || undefined}
+              aria-invalid={submitted && errors.some(e => e.fieldId === "email") ? true : undefined}
               aria-describedby={submitted && errors.some(e => e.fieldId === "email") ? "email-error" : undefined}
             />
           </FormField>
