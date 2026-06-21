@@ -12,3 +12,4 @@ export {
   type FormErrorSummaryProps,
   type FormError,
 } from "./components/FormValidation";
+export { DataTable, type DataTableProps, type DataTableColumn } from "./components/DataTable";
