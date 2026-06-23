@@ -73,6 +73,18 @@ pnpm test
 pnpm build
 ```
 
+## Interactive Documentation
+
+Each component is documented in Storybook with live previews, interactive controls, and automated WCAG 2.1 AA accessibility audits via the Accessibility panel.
+
+To run locally:
+
+```bash
+pnpm install
+cd packages/ui
+pnpm storybook
+```
+
 ## Accessibility
 
 See [ACCESSIBILITY.md](./ACCESSIBILITY.md) for the complete WCAG 2.1 AA criteria mapping per component, including manual validation checklists.
