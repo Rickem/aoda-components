@@ -6,6 +6,7 @@ const navItems = [
   { name: "Select", href: "/components/select" },
   { name: "Modal", href: "/components/modal" },
   { name: "Form Validation", href: "/components/form-validation" },
+  { name: "Storybook", href: "/storybook/index.html" },
 ];
 
 export default function ComponentsLayout({

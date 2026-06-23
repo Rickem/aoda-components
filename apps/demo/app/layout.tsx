@@ -22,9 +22,15 @@ export default function RootLayout({
           Skip to main content
         </a>
         <header className="border-b border-gray-200 px-6 py-4">
-          <nav aria-label="Main navigation">
+          <nav aria-label="Main navigation" className="flex items-center justify-between">
             <a href="/" className="text-lg font-bold text-gray-900">
               AODA Components
+            </a>
+            <a
+              href="/storybook/index.html"
+              className="rounded-md bg-primary-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+            >
+              Storybook
             </a>
           </nav>
         </header>
